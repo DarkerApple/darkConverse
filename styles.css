@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gluten:wght@100..900&family=Jua&display=swap');
+
+:root {
+    --bg-color: #2b2b2b;
+    --text-color: aliceblue;
+    --accent-color: #4a90e2;
+}
+
+* {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
+}
+
+em {
+    font-family: 'Jua', sans-serif;
+}
+
+header {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    font-weight: 100;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    font-size: 75px;
+    margin: 20px 0;
+}
+
+#headNav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#headNav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+#theme-switcher {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#theme-select {
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#theme-select:hover {
+    opacity: 0.8;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2, h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+#intro p {
+    font-size: 18px;
+}
+
+#features ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#features li::before {
+    content: "•";
+    color: var(--accent-color);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#cta {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#join-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#join-btn:hover {
+    background-color: #3a7bc8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Theme-specific styles */
+body.light {
+    --bg-color: #f0f0f0;
+    --text-color: #333333;
+    --accent-color: #2c6cb0;
+}
+
+body.baby-pink {
+    --bg-color: #ffd1dc;
+    --text-color: #8e4585;
+    --accent-color: #ff69b4;
+}
+
+body.neon {
+    --bg-color: #3461c3;
+    --text-color: #ccffc3;
+    --accent-color: #ff00ff;
+}
+
+body.hacker {
+    --bg-color: #0d0208;
+    --text-color: #00ff41;
+    --accent-color: #ff00ff;
+}
+
+body.sepia {
+    --bg-color: #f1e7d0;
+    --text-color: #704214;
+    --accent-color: #8b4513;
+}
+
+body.blue {
+    --bg-color: #e6f2ff;
+    --text-color: #00366d;
+    --accent-color: #4a90e2;
+}

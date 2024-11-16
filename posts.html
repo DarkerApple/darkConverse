@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkConverse - Posts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gluten:wght@100..900&family=Jua&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="posts.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="logo"><strong>Dark</strong>Converse</h1>
+        <nav id="headNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="posts.html">Forum/Posts</a></li>
+            </ul>
+        </nav>
+        <div id="theme-switcher">
+            <select id="theme-select">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+                <option value="sepia">Sepia</option>
+                <option value="blue">Blue</option>
+                <option value="classic">Classic</option> <!-- New Classic Theme -->
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <h2>Posts</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search posts or tags..." />
+
+        <!-- Post List -->
+        <div id="post-list">
+            <!-- Posts will be dynamically added here -->
+        </div>
+
+        <!-- New Post Button -->
+        <button id="new-post-btn">+</button>
+
+        <!-- New Post Modal -->
+        <div id="new-post-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Create a New Post</h3>
+                <input type="text" id="post-title" placeholder="Title" required />
+                <textarea id="post-content" placeholder="Content" rows="5" required></textarea>
+                <input type="text" id="post-tag" placeholder="Tag (optional)" />
+                <input type="file" id="post-image" accept="image/*" />
+                <button id="submit-post">Post</button>
+            </div>
+        </div>
+
+        <!-- Post View Section -->
+        <div id="post-view">
+            <button id="back-to-posts">Back to Posts</button>
+            <h3 id="view-title"></h3>
+            <p id="view-content"></p>
+            <p id="view-tag"></p>
+            <img id="view-image" style="max-width: 100%; display: none;" />
+            <h4>Comments:</h4>
+            <div id="comments-list"></div>
+            <textarea id="new-comment" placeholder="Add a comment..." rows="3"></textarea>
+            <button id="submit-comment">Add Comment</button>
+        </div>
+    </main>
+    <div id="tic-tac-toe" style="display: none;">
+        <h3>Tic-Tac-Toe</h3>
+        <div id="game-board"></div>
+        <button id="reset-game">Reset Game</button>
+    </div>
+
+<div id="celebration" style="display: none;">
+    <span>🎉<br><h11>Congrats! You reached 100 likes!</h11></span>
+</div>
+
+    <!-- Include Scripts -->
+    <script src="script.js"></script>
+    <script src="posts.js"></script>
+
+</body>
+</html>
